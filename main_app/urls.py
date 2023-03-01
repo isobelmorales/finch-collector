@@ -6,4 +6,6 @@ from . import views
 urlpatterns = [
     # displays the Home page
     path('', views.home, name='home'),
+    # About page
+    path('about/', views.about, name='about')
 ]
