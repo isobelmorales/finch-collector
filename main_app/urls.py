@@ -7,5 +7,7 @@ urlpatterns = [
     # displays the Home page
     path('', views.home, name='home'),
     # About page
-    path('about/', views.about, name='about')
+    path('about/', views.about, name='about'),
+    # Finches index
+    path('finches/', views.finches_index, name='index'),
 ]
