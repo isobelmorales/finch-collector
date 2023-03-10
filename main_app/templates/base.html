@@ -8,6 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Finch Collector</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <!-- The static DTL template tag ensures that the correct URL is assigned to the href -->
   <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 </head>
@@ -19,8 +20,11 @@
           <li><a href="/" class="left brand-logo">&nbsp;&nbsp;Finch Collector</a></li>
         </ul>
         <ul class="right">
-          <li><a href="/about">About</a></li>
-          <li><a href="/finches">View All Finches</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'finches_create' %}">Add a Finch</a></li>
+          <li><a href="{% url 'index' %}">View All Finches</a></li>
+          <li><a href="{% url 'toys_create' %}">Add a Toy</a></li>
+          <li><a href="{% url 'toys_index' %}">View All Toys</a></li>
         </ul>
       </div>
     </nav>
